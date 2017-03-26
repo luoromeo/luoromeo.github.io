@@ -6,27 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>luoromeo</title>
+  <title>SpringBoot使用JRebel实现热部署 | luoromeo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SpringBoot使用Jrebel实现热部署为什么要热部署在进行SpringBoot项目开发时，每次修改类后，都需要重启项目才能对所做的修改进行调试，使用热部署工具，可以无需重启服务，节约时间。
-Intellij Idea 使用JRebel实现热部署一、安装JRebel1、在Idea插件仓库搜索下载并安装 jrebel 6.5.2。安装完成后需要重启idea，重启完成后关闭idea2、下载破解补">
+  <meta name="description" content="为什么要热部署在进行SpringBoot项目开发时，每次修改类后，都需要重启项目才能对所做的修改进行调试，使用热部署工具，可以无需重启服务，节约时间。
+IntelliJ Idea 使用JRebel实现热部署一、安装JRebel1、在Idea插件仓库搜索下载并安装 jrebel 6.5.2。安装完成后需要重启idea，重启完成后关闭idea2、下载破解补丁3、解压缩破解补丁(该补丁在mac下为的文件">
 <meta property="og:type" content="article">
-<meta property="og:title" content="luoromeo">
+<meta property="og:title" content="SpringBoot使用JRebel实现热部署">
 <meta property="og:url" content="http://yoursite.com/2017/03/26/SpringBoot使用JRebel实现热部署/index.html">
 <meta property="og:site_name" content="luoromeo">
-<meta property="og:description" content="SpringBoot使用Jrebel实现热部署为什么要热部署在进行SpringBoot项目开发时，每次修改类后，都需要重启项目才能对所做的修改进行调试，使用热部署工具，可以无需重启服务，节约时间。
-Intellij Idea 使用JRebel实现热部署一、安装JRebel1、在Idea插件仓库搜索下载并安装 jrebel 6.5.2。安装完成后需要重启idea，重启完成后关闭idea2、下载破解补">
+<meta property="og:description" content="为什么要热部署在进行SpringBoot项目开发时，每次修改类后，都需要重启项目才能对所做的修改进行调试，使用热部署工具，可以无需重启服务，节约时间。
+IntelliJ Idea 使用JRebel实现热部署一、安装JRebel1、在Idea插件仓库搜索下载并安装 jrebel 6.5.2。安装完成后需要重启idea，重启完成后关闭idea2、下载破解补丁3、解压缩破解补丁(该补丁在mac下为的文件">
 <meta property="og:image" content="http://yoursite.com/img/1.png">
 <meta property="og:image" content="http://yoursite.com/img/2.png">
 <meta property="og:image" content="http://yoursite.com/img/3.png">
 <meta property="og:image" content="http://yoursite.com/img/4.png">
 <meta property="og:image" content="http://yoursite.com/img/5.png">
 <meta property="og:image" content="http://yoursite.com/img/6.png">
-<meta property="og:updated_time" content="2017-03-26T15:43:31.000Z">
+<meta property="og:updated_time" content="2017-03-26T16:02:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="luoromeo">
-<meta name="twitter:description" content="SpringBoot使用Jrebel实现热部署为什么要热部署在进行SpringBoot项目开发时，每次修改类后，都需要重启项目才能对所做的修改进行调试，使用热部署工具，可以无需重启服务，节约时间。
-Intellij Idea 使用JRebel实现热部署一、安装JRebel1、在Idea插件仓库搜索下载并安装 jrebel 6.5.2。安装完成后需要重启idea，重启完成后关闭idea2、下载破解补">
+<meta name="twitter:title" content="SpringBoot使用JRebel实现热部署">
+<meta name="twitter:description" content="为什么要热部署在进行SpringBoot项目开发时，每次修改类后，都需要重启项目才能对所做的修改进行调试，使用热部署工具，可以无需重启服务，节约时间。
+IntelliJ Idea 使用JRebel实现热部署一、安装JRebel1、在Idea插件仓库搜索下载并安装 jrebel 6.5.2。安装完成后需要重启idea，重启完成后关闭idea2、下载破解补丁3、解压缩破解补丁(该补丁在mac下为的文件">
 <meta name="twitter:image" content="http://yoursite.com/img/1.png">
   
     <link rel="alternative" href="/atom.xml" title="luoromeo" type="application/atom+xml">
@@ -67,6 +67,10 @@ Intellij Idea 使用JRebel实现热部署一、安装JRebel1、在Idea插件仓�
 			<ul>
 			
 				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/SpringBoot/">SpringBoot</a></li>
+	        
+				<li><a href="/tags/SpringCloud/">SpringCloud</a></li>
 	        
 				<li><a href="/tags/随笔/">随笔</a></li>
 	        
@@ -112,6 +116,10 @@ Intellij Idea 使用JRebel实现热部署一、安装JRebel1、在Idea插件仓�
 			
 				
 			
+				
+			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -123,12 +131,16 @@ Intellij Idea 使用JRebel实现热部署一、安装JRebel1、在Idea插件仓�
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 25%"><a href="/tags/SpringBoot/">SpringBoot</a></li>
+		        
+					<li style="width: 25%"><a href="/tags/SpringCloud/">SpringCloud</a></li>
+		        
+					<li style="width: 25%"><a href="/tags/随笔/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -146,10 +158,25 @@ Intellij Idea 使用JRebel实现热部署一、安装JRebel1、在Idea插件仓�
             <article id="post-SpringBoot使用JRebel实现热部署" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      SpringBoot使用JRebel实现热部署
+    </h1>
+  
+
+        
+        <a href="/2017/03/26/SpringBoot使用JRebel实现热部署/" class="archive-article-date">
+  	<time datetime="2017-03-26T15:43:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-26</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="SpringBoot使用Jrebel实现热部署"><a href="#SpringBoot使用Jrebel实现热部署" class="headerlink" title="SpringBoot使用Jrebel实现热部署"></a>SpringBoot使用Jrebel实现热部署</h1><h2 id="为什么要热部署"><a href="#为什么要热部署" class="headerlink" title="为什么要热部署"></a>为什么要热部署</h2><p>在进行SpringBoot项目开发时，每次修改类后，都需要重启项目才能对所做的修改进行调试，使用热部署工具，可以无需重启服务，节约时间。</p>
-<h2 id="Intellij-Idea-使用JRebel实现热部署"><a href="#Intellij-Idea-使用JRebel实现热部署" class="headerlink" title="Intellij Idea 使用JRebel实现热部署"></a>Intellij Idea 使用JRebel实现热部署</h2><h3 id="一、安装JRebel"><a href="#一、安装JRebel" class="headerlink" title="一、安装JRebel"></a>一、安装JRebel</h3><p>1、在<a href="https://plugins.jetbrains.com/plugin/4441-jrebel-for-intellij" target="_blank" rel="external">Idea插件仓库</a>搜索下载并安装 jrebel 6.5.2。安装完成后需要重启idea，重启完成后关闭idea<br>2、下载<a href="http://download.csdn.net/detail/lyfai521/9662796" target="_blank" rel="external">破解补丁</a><br>3、解压缩破解补丁(该补丁在mac下为的文件夹名称为.jrebel，mac不会显示，可以在控制台使用ll命令查看解压是否成功！)<br>4、使用mv命令替换.jrebel。mv -r ‘破解文件解压地址’ /Users/用户名/.jrebel。替换完成后破解成功。</p>
+        <h2 id="为什么要热部署"><a href="#为什么要热部署" class="headerlink" title="为什么要热部署"></a>为什么要热部署</h2><p>在进行SpringBoot项目开发时，每次修改类后，都需要重启项目才能对所做的修改进行调试，使用热部署工具，可以无需重启服务，节约时间。</p>
+<h2 id="IntelliJ-Idea-使用JRebel实现热部署"><a href="#IntelliJ-Idea-使用JRebel实现热部署" class="headerlink" title="IntelliJ Idea 使用JRebel实现热部署"></a>IntelliJ Idea 使用JRebel实现热部署</h2><h3 id="一、安装JRebel"><a href="#一、安装JRebel" class="headerlink" title="一、安装JRebel"></a>一、安装JRebel</h3><p>1、在<a href="https://plugins.jetbrains.com/plugin/4441-jrebel-for-intellij" target="_blank" rel="external">Idea插件仓库</a>搜索下载并安装 jrebel 6.5.2。安装完成后需要重启idea，重启完成后关闭idea<br>2、下载<a href="http://download.csdn.net/detail/lyfai521/9662796" target="_blank" rel="external">破解补丁</a><br>3、解压缩破解补丁(该补丁在mac下为的文件夹名称为.jrebel，mac不会显示，可以在控制台使用ll命令查看解压是否成功！)<br>4、使用mv命令替换.jrebel。mv -r ‘破解文件解压地址’ /Users/用户名/.jrebel。替换完成后破解成功。</p>
 <h3 id="二、使用JRebel"><a href="#二、使用JRebel" class="headerlink" title="二、使用JRebel"></a>二、使用JRebel</h3><p>1、在需要进行热部署的模块点击右键-&gt;JRebel-&gt;rebel.xml，如下图<br><br><img src="img/1.png" alt="添加rebel.xml"><br><br>完成后会在resources文件夹下生成rebel.xml文件，如下图<br><br><img src="img/2.png" alt="生成rebel.xml"><br><br>2、使用JRebel插件运行SpringBoot项目，如下图<br><br><img src="img/3.png" alt="使用JRebel运行项目"><br><br>或者点击右上角的使用JRebel运行项目按钮，如下图<br><br><img src="img/4.png" alt="使用JRebel运行项目"><br><br>运行时出现以下画面，则使用JRebel热部署插件运行成功<br><br><img src="img/5.png" alt="运行成功"><br><br>3、在编辑保存完.java文件时只要在修改的文件上点击右键，选择重编译文件&lt;如下图&gt;，就可以享受热部署带来的快感，<br>无需重启就可以调试修改后的代码了<br><img src="img/6.png" alt="重编译"><br></p>
 <h3 id="三、实现实时编译，方便JRebel保存即自动编译"><a href="#三、实现实时编译，方便JRebel保存即自动编译" class="headerlink" title="三、实现实时编译，方便JRebel保存即自动编译"></a>三、实现实时编译，方便JRebel保存即自动编译</h3><p>在之前的操作中，每次保存完，我们都需要手动点击重编译。能不能一步到位，保存的时候就重编译呢。<br>我们可以使用idea的宏编辑来实现这一功能。<br>1、选择Edit -&gt; Macros -&gt; Start Macro Recording<br><br>2、打开一个java文件<br>3、按Ctrl+S键<br>4、按Command+Shift+F9键<br>5、选择Edit -&gt; Macros -&gt; Stop Macro Recording，在弹出框中输入“Save &amp; Compile”<br>6、选择IntelliJ Idea -&gt; Preferences -&gt; Keymap,在搜索框中输入“Save &amp; Compile”，选中“Mocros”下的“Save &amp; Compile”,<br>右键选择“Add Keyboard Shortcut”,按Ctrl+S键，点击“OK”，之后点击“Remove”</p>
 
@@ -160,6 +187,29 @@ Intellij Idea 使用JRebel实现热部署一、安装JRebel1、在Idea插件仓�
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">SpringBoot</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Jrebel</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">热部署</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -251,6 +301,22 @@ Intellij Idea 使用JRebel实现热部署一、安装JRebel1、在Idea插件仓�
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">SpringBoot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Jrebel</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
